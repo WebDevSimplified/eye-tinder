@@ -1,5 +1,6 @@
 window.saveDataAcrossSessions = true // Save calibrations
 
+const MAIN_CONTAINER = document.querySelector("main")
 const LOOK_DELAY = 1000 // 1 second
 const LEFT_CUTOFF = window.innerWidth / 4
 const RIGHT_CUTOFF = window.innerWidth - window.innerWidth / 4
@@ -58,6 +59,6 @@ function getNewImage(next = false) {
   const img = document.createElement("img")
   img.src = `https://picsum.photos/1000?${Math.random()}`
   if (next) img.classList.add("next")
-  document.body.append(img)
+  MAIN_CONTAINER.append(img)
   return img
 }
