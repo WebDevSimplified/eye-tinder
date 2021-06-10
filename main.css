@@ -1,0 +1,73 @@
+@font-face {
+	font-family: "Gotham Rounded";
+	src: url("GothamRounded-Bold.woff2") format("woff2"),
+		url("GothamRounded-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Rounded";
+	src: url("GothamRounded-Light.woff2") format("woff2"),
+		url("GothamRounded-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham Rounded";
+	src: url("GothamRounded-Book.woff2") format("woff2"),
+		url("GothamRounded-Book.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+::-moz-selection {
+  color: inherit;
+  background: orchid;
+}
+::-webkit-selection {
+  color: inherit;
+  background: orchid;
+}
+::-o-selection {
+  color: inherit;
+  background: orchid;
+}
+::-ms-selection {
+  color: inherit;
+  background: orchid;
+}
+::selection {
+  color: inherit;
+  background: orchid;
+}
+
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Gotham Rounded, Arial, Helvetica, sans-serif;
+    }
+
+    img {
+      width: 50vw;
+      height: 100vh;
+      transition: transform 200ms;
+      object-fit: cover;
+    }
+
+    img.left {
+      transform: translateX(-100vw);
+    }
+
+    img.right {
+      transform: translateX(100vw);
+    }
+
+    img.next {
+      display: none;
+    }
