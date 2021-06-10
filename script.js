@@ -57,7 +57,7 @@ webgazer
 
 function getNewImage(next = false) {
   const img = document.createElement("img")
-  img.src = `https://picsum.photos/1000?${Math.random()}`
+  img.src = `https://picsum.photos/1000?${Math.random()}` // Anti-cache for random picsum photo
   if (next) img.classList.add("next")
   MAIN_CONTAINER.append(img)
   return img
